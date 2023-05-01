@@ -17,7 +17,7 @@ const addAnswerButton = document.getElementById('addAnswerBtn');
 const init = async () => {
   const localStream = await navigator.mediaDevices.getUserMedia({
     video: true,
-    audio: false,
+    audio: true,
   });
 
   const remoteStream = new MediaStream();
